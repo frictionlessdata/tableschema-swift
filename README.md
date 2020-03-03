@@ -1,0 +1,1 @@
+# tableschema-swift
