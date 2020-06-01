@@ -89,7 +89,7 @@ public class Field {
             }
         }
 
-        public static func == (lhs: Self, rhs: Self) -> Bool {
+        public static func == (lhs: Format, rhs: Format) -> Bool {
             return lhs.description == rhs.description
         }
     }
@@ -382,6 +382,7 @@ extension Field {
 
     internal func integerCast(_ value: String) throws -> Any {
         if !self.bareNumber {
+            #if os(iOS) || os(macOS)
             let scanner = Scanner(string: value)
             scanner.charactersToBeSkipped = nil
 
@@ -393,6 +394,9 @@ extension Field {
             if let integer = digits(using: scanner, isNegative) {
                 return integer
             }
+            #else
+            throw CastError.unavailableCast
+            #endif
         } else if let integer = Int(value) {
             return integer
         }

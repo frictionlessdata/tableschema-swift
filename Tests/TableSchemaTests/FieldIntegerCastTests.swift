@@ -16,8 +16,10 @@ class FieldIntegerCastTests: XCTestCase {
         let value = "10"
         XCTAssertEqual(field.cast(value) as? Int, 10)
         XCTAssertTrue(field.test(value))
+        #if os(iOS) || os(macOS)
         XCTAssertEqual(clothedField.cast(value) as? Int, 10)
         XCTAssertTrue(clothedField.test(value))
+        #endif
 
         XCTAssertEqual(field.reverseCast(10), value)
         XCTAssertTrue(field.reverseTest(10))
@@ -51,23 +53,31 @@ class FieldIntegerCastTests: XCTestCase {
         var clothed = "asd10asd"
         XCTAssertNil(field.cast(clothed))
         XCTAssertFalse(field.test(clothed))
+        #if os(iOS) || os(macOS)
         XCTAssertEqual(clothedField.cast(clothed) as? Int, 10)
         XCTAssertTrue(clothedField.test(clothed))
+        #endif
 
         XCTAssertEqual(clothedField.reverseCast(10), "10")
         XCTAssertTrue(clothedField.reverseTest(10))
 
         clothed = "10asd"
+        #if os(iOS) || os(macOS)
         XCTAssertEqual(clothedField.cast(clothed) as? Int, 10)
         XCTAssertTrue(clothedField.test(clothed))
+        #endif
 
         clothed = "asd10"
+        #if os(iOS) || os(macOS)
         XCTAssertEqual(clothedField.cast(clothed) as? Int, 10)
         XCTAssertTrue(clothedField.test(clothed))
+        #endif
 
         clothed = "asd10asd88"
+        #if os(iOS) || os(macOS)
         XCTAssertEqual(clothedField.cast(clothed) as? Int, 10)
         XCTAssertTrue(clothedField.test(clothed))
+        #endif
     }
 
     static var allTests = [

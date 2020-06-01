@@ -9,8 +9,8 @@ A schema on tabular data defines types, imposes constraints, and creates foreign
     * Apple platforms, specifically iOS and macOS
        * Full functionality in iOS >= 10 and macOS >= 10.12
     * Linux, limited by features available in `swift-corelibs-foundation`
- * No external dependencies apart from using `Foundation`.
-    * Independent from any one particular physical representation.
+ * Apple's `Foundation` framework is the only dependency
+ * Independent from any one particular physical representation
 
 ## Implementation Status
 Being a draft implementation means APIs have not been solidified and are subject to change. However, much of the foundation has been laid, there is a testing suite to keep what should be working in check, and it is being used in at least one shipping product over a subset of the available features. The approach has been implementing features on an as-needed basis.
@@ -33,7 +33,8 @@ Being a draft implementation means APIs have not been solidified and are subject
 | string    | default, uri, binary, uuid | *N/A*                   | Available                            | Available                            |
 | string    | email                      | *N/A*                   | Unavailable                          | Unavailable                          |
 | number    | *N/A*                      | *Any*                   | Unavailable                          | Unavailable                          |
-| integer   | *N/A*                      | bareNumber              | Available                            | Available                            |
+| integer   | *N/A*                      | bareNumber = false      | Available*                           | Available                            |
+| integer   | *N/A*                      | bareNumber = true       | Available                            | Available                            |
 | boolean   | *N/A*                      | trueValues, falseValues | Available                            | Available                            |
 | object    | *N/A*                      | *N/A*                   | Available                            | Unavailable                          |
 | array     | *N/A*                      | *N/A*                   | Available                            | Available                            |
