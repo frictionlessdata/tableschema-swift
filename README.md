@@ -1,4 +1,7 @@
 # tableschema-swift
+[![TravisCI Build Status](https://travis-ci.org/frictionlessdata/tableschema-swift.svg?branch=master)](https://travis-ci.org/frictionlessdata/tableschema-swift)
+[![Coveralls Coverage Status](https://coveralls.io/repos/github/frictionlessdata/tableschema-swift/badge.svg?branch=master)](https://coveralls.io/github/frictionlessdata/tableschema-swift?branch=master)
+
 This is a *draft* Swift language implementation of [TableSchema](https://frictionlessdata.io/specs/table-schema/) for defining schemas to work with tabular data.
 
 A schema on tabular data defines types, imposes constraints, and creates foreign key relationships on fields as data values move from some physical representation to a logical one and vice versa. For instance, a stored CSV file (physical) can be loaded in-memory along with a corresponding schema descriptor to be transformed from string values to Swift Standard Library types like `Date` or `Int` (logical).
