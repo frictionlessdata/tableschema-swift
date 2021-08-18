@@ -1,4 +1,5 @@
 # tableschema-swift
+
 [![Build](https://travis-ci.org/frictionlessdata/tableschema-swift.svg?branch=master)](https://travis-ci.org/frictionlessdata/tableschema-swift)
 [![Coverage](https://coveralls.io/repos/github/frictionlessdata/tableschema-swift/badge.svg?branch=master)](https://coveralls.io/github/frictionlessdata/tableschema-swift?branch=master)
 [![Codebase](https://img.shields.io/badge/codebase-github-brightgreen)](https://github.com/frictionlessdata/tableschema-swift)
