@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "tableschema-swift",
     products: [
-        .library(name: "TableSchema", type: .static, targets: ["TableSchema"])
+        .library(name: "TableSchema", targets: ["TableSchema"])
     ],
     dependencies: [],
     targets: [
