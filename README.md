@@ -1,7 +1,7 @@
 # tableschema-swift
 
-[![Build](https://travis-ci.org/frictionlessdata/tableschema-swift.svg?branch=master)](https://travis-ci.org/frictionlessdata/tableschema-swift)
-[![Coverage](https://coveralls.io/repos/github/frictionlessdata/tableschema-swift/badge.svg?branch=master)](https://coveralls.io/github/frictionlessdata/tableschema-swift?branch=master)
+[![Build](https://github.com/frictionlessdata/tableschema-swift/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/frictionlessdata/tableschema-swift/actions/workflows/tests.yml)
+[![Coverage](https://coveralls.io/repos/github/frictionlessdata/tableschema-swift/badge.svg?branch=main)](https://coveralls.io/github/frictionlessdata/tableschema-swift?branch=main)
 [![Codebase](https://img.shields.io/badge/codebase-github-brightgreen)](https://github.com/frictionlessdata/tableschema-swift)
 [![Support](https://img.shields.io/badge/support-discord-brightgreen)](https://discordapp.com/invite/Sewv6av)
 
