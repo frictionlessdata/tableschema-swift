@@ -5,7 +5,7 @@
 [![Codebase](https://img.shields.io/badge/codebase-github-brightgreen)](https://github.com/frictionlessdata/tableschema-swift)
 [![Support](https://img.shields.io/badge/support-discord-brightgreen)](https://discordapp.com/invite/Sewv6av)
 
-This is a *draft* Swift language implementation of [TableSchema](https://frictionlessdata.io/specs/table-schema/) for defining schemas to work with tabular data.
+This is a Swift language implementation of [TableSchema](https://frictionlessdata.io/specs/table-schema/) for defining schemas to work with tabular data.
 
 A schema on tabular data defines types, imposes constraints, and creates foreign key relationships on fields as data values move from some physical representation to a logical one and vice versa. For instance, a stored CSV file (physical) can be loaded in-memory along with a corresponding schema descriptor to be transformed from string values to Swift Standard Library types like `Date` or `Int` (logical).
 
@@ -19,7 +19,7 @@ A schema on tabular data defines types, imposes constraints, and creates foreign
  * Independent from any one particular physical representation
 
 ## Implementation Status
-Being a draft implementation means APIs have not been solidified and are subject to change. However, much of the foundation has been laid, there is a testing suite to keep what should be working in check, and it is being used in at least one shipping product over a subset of the available features. The approach has been implementing features on an as-needed basis.
+Although incomplete this library is being used in at least one shipping product over a subset of the available features. Field types that are unsupported will not be transformed resulting in potential data loss on those unsupported types. Please consult the following tables. There is a testing suite to keep what should be working in check. Contributions are welcome.
 
 ### Feature Status
 | Feature                         | Status                            |
